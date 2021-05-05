@@ -17,5 +17,5 @@ tags = {
 }
 resource "aws_eip" "ip" {
     vpc      = true
-    instance = "${aws_instance.example.id}"
+    instance = "${aws_instance.os2.id}"
 }
