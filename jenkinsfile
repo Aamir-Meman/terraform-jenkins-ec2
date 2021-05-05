@@ -23,7 +23,7 @@
 
       stage('TF Apply') {
         steps {
-          sh 'terraform apply -input=yes'
+          sh 'terraform apply'
         }
       }
     } 
