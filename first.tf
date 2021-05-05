@@ -6,12 +6,12 @@ secret_key="nqX9vvYfvfIxWmJXhnhEtCjEHM86/RuQtRDJlmST"
 
 }
 
-resource "aws_instance" "os1" {
+resource "aws_instance" "os2" {
 
 ami = "ami-0d5eff06f840b45e9"
 instance_type = "t2.small"
 tags = {
-  Name = "my first TF OS 11"
+  Name = "my first TF OS 12"
   }
 
 }
