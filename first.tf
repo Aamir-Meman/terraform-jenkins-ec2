@@ -1,8 +1,7 @@
 provider "aws" {
 
 region="us-east-1"
-access_key="AKIAQCA5SZP4PBMLDYOD"
-secret_key="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"
+profile = "account1"
 
 }
 
