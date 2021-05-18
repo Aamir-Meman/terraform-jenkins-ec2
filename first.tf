@@ -1,13 +1,19 @@
-provider "aws" {
-
-region="us-east-1"
-profile = "account1"
-
+provider "google" {
+  project     ="playground-s-11-297d694b"
+  region      = "us-east1"
+  zone        = "us-east1-c"
+  credentials = file("/Users/ameman/Downloads/credentials.json")
 }
-
-resource "aws_instance" "example" {
-  ami = "ami-0d5eff06f840b45e9"
-  instance_type = "t2.small"
-  
-  
+resource "google_compute_instance" "default" {
+  name         = "os1"
+  machine_type = "e2-medium"
+  zone         = "us-east1-c"
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+  network_interface {
+    network = "default"
+  }
 }
