@@ -1,3 +1,3 @@
-# terraform-jenkins-ec2
-This is demo repository for Terraform integration with jenkins.
-# terraform-jenkins-ec2
+# terraform-jenkins-compute-gcp
+This is demo repository for Terraform integration with Jenkins and GCP cloud provider.
+
